@@ -10,7 +10,7 @@ def kyle():
         text.insert(tk.INSERT, "Everything looks right!\n")
 
     #GUI
-    master = tk.Tk()
+    master = tk.Toplevel()
     master.title("Kyle's Button")
     master.configure(background = '#ccf2ff')
     
@@ -25,7 +25,7 @@ def kyle():
     e1.grid(row=0, column=1)
     
     tk.Button(master, text='Run', command=runTheProgram).grid(row=4, column=1, sticky=W, pady=4)
-    tk.Button(master, text='Quit', command=master.quit).grid(row=4, column=2, sticky=W, pady=4)
+    #tk.Button(master, text='Quit', command=master.quit).grid(row=4, column=2, sticky=W, pady=4)
     
     tk.mainloop( )
 
@@ -50,7 +50,7 @@ def mike():
         clearTheField()
 
     #GUI
-    master = tk.Tk()
+    master = tk.Toplevel()
     master.title("Mike's Button")
     master.configure(background = '#5fb6f4')
     
@@ -65,6 +65,6 @@ def mike():
     e1.grid(row=0, column=1)
     
     tk.Button(master, text='Run', command=runTheProgram).grid(row=4, column=1, sticky=W, pady=4)
-    tk.Button(master, text='Quit', command=master.quit).grid(row=4, column=2, sticky=W, pady=4)
+    #tk.Button(master, text='Quit', command=master.quit).grid(row=4, column=2, sticky=W, pady=4)
     
     tk.mainloop( )
