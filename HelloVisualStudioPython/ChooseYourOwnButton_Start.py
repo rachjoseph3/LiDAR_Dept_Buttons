@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import W, E, N, S
-import buttonHome
+import buttonHome_def as buttonHome
 
 #GUI
 master = tk.Tk()
