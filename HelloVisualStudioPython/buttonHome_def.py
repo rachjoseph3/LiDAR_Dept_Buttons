@@ -6,7 +6,7 @@ import random
 #definitions
 
 def kyle():
-    def runTheProgram():
+    def runTheProgramKyle():
         text.insert(tk.INSERT, "Everything looks right!\n")
 
     #GUI
@@ -21,10 +21,9 @@ def kyle():
     text.insert(tk.INSERT, ">>>")
     
     e1 = tk.Entry(master, width=120)
-    
     e1.grid(row=0, column=1)
     
-    tk.Button(master, text='Run', command=runTheProgram).grid(row=4, column=1, sticky=W, pady=4)
+    tk.Button(master, text='Run', command=runTheProgramKyle).grid(row=4, column=1, sticky=W, pady=4)
     #tk.Button(master, text='Quit', command=master.quit).grid(row=4, column=2, sticky=W, pady=4)
     
     tk.mainloop( )
@@ -34,7 +33,7 @@ def mike():
     def clearTheField():
         e1.delete(0,tk.END)
 
-    def runTheProgram():
+    def runTheProgramMike():
         phrase = [
             "Everything is going to be OK!\n",
             "Breathe\n",
@@ -64,7 +63,7 @@ def mike():
     
     e1.grid(row=0, column=1)
     
-    tk.Button(master, text='Run', command=runTheProgram).grid(row=4, column=1, sticky=W, pady=4)
+    tk.Button(master, text='Run', command=runTheProgramMike).grid(row=4, column=1, sticky=W, pady=4)
     #tk.Button(master, text='Quit', command=master.quit).grid(row=4, column=2, sticky=W, pady=4)
     
     tk.mainloop( )
