@@ -44,6 +44,7 @@ def mike():
             "Let's take three deep breaths.\n",
             "You're going to be OK\n",
             "Calmness is the cradle of power. - Josiah Gilbert Holland\n",
+            "May your sour cream be care free and your sauerkraut feminine\n",
             ]
         text.insert(tk.INSERT, random.choice(phrase))
         clearTheField()
