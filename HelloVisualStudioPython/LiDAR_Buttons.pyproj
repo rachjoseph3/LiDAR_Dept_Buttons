@@ -37,6 +37,9 @@
     <Compile Include="KylesButton.py" />
     <Compile Include="MikesButton.py" />
     <Compile Include="MikesButtonV2.py" />
+    <Compile Include="ShanersButton.py" />
+    <Compile Include="ShanersButtonV2.py" />
+    <Compile Include="ZachsButton.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
