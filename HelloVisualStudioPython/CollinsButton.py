@@ -7,11 +7,34 @@ import random
 
 #definitions
 def runTheProgram():
-    race = 
+    raceList = [
+        "Human",
+        "Dwarf",        
+        "Elf",
+        "Gnome",
+        "Half-Elf",
+        "Halfling",
+        "Half-Orc",
+        ]
 
+    race = random.choice(raceList)
 
+    classList = [
+        "Barbarian",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Fighter",
+        "Monk",
+        "Paladin",
+        "Ranger",
+        "Rogue",
+        "Sorcerer",
+        "Wizard",
+        ]
+    clas = random.choice(classList)
 
-    text.insert(tk.INSERT, "Race: {}".format(race))
+    text.insert(tk.INSERT, "Race: {}, Class: {}\n".format(race, clas))
 
 #GUI
 master = tk.Tk()
@@ -22,7 +45,7 @@ tk.Label(master, text="Hit Run for a random Pathfinder race, class, and prestige
 
 text = tk.Text(master)
 text.grid(row=2, column=1)
-text.insert(tk.INSERT, ">>>")
+#text.insert(tk.INSERT, ">>>")
 
 tk.Button(master, text='Run', command=runTheProgram).grid(row=0, column=1, sticky=W, pady=4)
 tk.Button(master, text='Quit', command=master.quit).grid(row=2, column=0, sticky=W, pady=4)
