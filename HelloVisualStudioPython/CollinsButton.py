@@ -1,0 +1,31 @@
+#Collin's Button
+#Collin can click this and it will randomly pick a pathfinder race and class and prestige class
+
+import tkinter as tk
+from tkinter import W, E
+import random
+
+#definitions
+def runTheProgram():
+    race = 
+
+
+
+    text.insert(tk.INSERT, "Race: {}".format(race))
+
+#GUI
+master = tk.Tk()
+master.title("Collin's Button")
+master.configure(background = '#ccf2ff')
+
+tk.Label(master, text="Hit Run for a random Pathfinder race, class, and prestige class.", anchor=E, background = '#ccf2ff').grid(row=0)
+
+text = tk.Text(master)
+text.grid(row=2, column=1)
+text.insert(tk.INSERT, ">>>")
+
+tk.Button(master, text='Run', command=runTheProgram).grid(row=0, column=1, sticky=W, pady=4)
+tk.Button(master, text='Quit', command=master.quit).grid(row=2, column=0, sticky=W, pady=4)
+
+tk.mainloop( )
+
